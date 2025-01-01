@@ -72,5 +72,5 @@ If the script won't run check the following:
 
 <br>
 
-<p align="center">synoboot already backed up</p>
+<p align="center">synoboot already backed up for this NAS and DSM version</p>
 <p align="center"><img src="/images/already_backed_up.png"></p>
