@@ -11,13 +11,7 @@
 #------------------------------------------------------------------------------
 
 # Set bakpath to suit the location to backup to
-if [[ $(cat /proc/sys/kernel/syno_hw_version) == "DS1821+" ]]; then
-    bakpath=/volume1/Backups/DiskStation/synoboot
-elif [[ $(cat /proc/sys/kernel/syno_hw_version) == "DS1812+" ]]; then
-    bakpath=/volume1/Backups/Webber/synoboot
-elif [[ $(cat /proc/sys/kernel/syno_hw_version) == "DS720+" ]]; then
-    bakpath=/volume1/backups/Senna/synoboot
-fi
+bakpath=/volume1/backups/synoboot
 
 
 scriptver="v1.0.0"
