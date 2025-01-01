@@ -47,10 +47,10 @@ If the script won't run check the following:
 
 ### Screenshots
 
-<!--- <p align="center">Description of image 1 goes here</p> --->
+<p align="center">Backing up synoboot</p>
 <p align="center"><img src="/images/do_backup.png"></p>
 
 <br>
 
-<!--- <p align="center">Description of image 2 goes here</p> --->
+<p align="center">synoboot already backed up</p>
 <p align="center"><img src="/images/already_backed_up.png"></p>
