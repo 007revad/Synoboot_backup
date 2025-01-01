@@ -10,6 +10,20 @@
 
 Back up synoboot after each DSM update so you can recover from a corrupt USBDOM or EEPROM
 
+### What does it do
+
+When you run the script, either via SSH or Task Scheduler, it backs up synoboot to the path you set at the top of the script.
+
+It backs up synoboot, as well as synoboot1 and synoboot2.
+
+The backup filenames include: 
+1. The Synology model.
+2. The Synology's serial number.
+3. synoboot or synoboot1 or synoboot2.
+4. The DSM version.
+
+1 and 2 are needed so you don't accidentially try to recover a corrupted USBDOM or EEPROM with the wrong image file (in case you have more than one Synology, or migrate the drives to a new Synology).
+
 ### Download the script
 
 1. Download the latest version _Source code (zip)_ from https://github.com/007revad/Synoboot_backup/releases
