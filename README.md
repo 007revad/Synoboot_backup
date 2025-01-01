@@ -16,6 +16,8 @@ When you run the script, either via SSH or Task Scheduler, it backs up synoboot 
 
 It backs up synoboot, as well as synoboot1 and synoboot2.
 
+It only creates a new backup if there are no backups with the same filename. So it will only create backups one the first run and after a DSM update.
+
 The backup filenames include: 
 1. The Synology model.
 2. The Synology's serial number.
@@ -33,6 +35,8 @@ The backup filenames include:
 3. Unzip the zip file.
 
 ### To run the script via task scheduler
+
+Schedule the script to run at bootup to automatically create new backups after each DMS update.
 
 See [How to run from task scheduler](https://github.com/007revad/Synoboot_backup/blob/main/how_to_run_from_scheduler.md)
 
