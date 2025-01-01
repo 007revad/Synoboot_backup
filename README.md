@@ -24,6 +24,8 @@ The backup filenames include:
 
 1 and 2 are needed so you don't accidentially try to recover a corrupted USBDOM or EEPROM with the wrong image file (in case you have more than one Synology, or migrate the drives to a new Synology).
 
+<p align="center"><img src="/images/filenames.png"></p>
+
 ### Download the script
 
 1. Download the latest version _Source code (zip)_ from https://github.com/007revad/Synoboot_backup/releases
