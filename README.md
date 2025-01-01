@@ -16,7 +16,7 @@ When you run the script, either via SSH or Task Scheduler, it backs up synoboot 
 
 It backs up synoboot, as well as synoboot1 and synoboot2.
 
-It only creates a new backup if there are no backups with the same filename. So it will only create backups one the first run and after a DSM update.
+It only creates a new backup if there are no backups with the same filename. So it will only create backups on the first run and after a DSM update.
 
 The backup filenames include: 
 1. The Synology model.
