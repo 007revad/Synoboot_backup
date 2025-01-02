@@ -1,5 +1,5 @@
 v1.0.1
-- Bug fix for getting the serial number.
+- Bug fix for not getting the serial number in some situations.
 - Bug fix for some models returning extra characters after the model.
 
 v1.0.0
