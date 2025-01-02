@@ -14,7 +14,7 @@
 bakpath=/volume1/backups/synoboot
 
 
-scriptver="v1.0.0"
+scriptver="v1.0.1"
 script=Synoboot_backup
 #repo="007revad/Synoboot_backup"
 #scriptname=synoboot_backup
@@ -65,8 +65,15 @@ fi
 # Get NAS model
 model=$(cat /proc/sys/kernel/syno_hw_version)
 
+# Check for dodgy characters after model number
+if [[ $model =~ 'pv10-j'$ ]]; then  # GitHub syno_hdd_db issue #10
+    model=${model%??????}+          # replace last 6 chars with +
+elif [[ $model =~ '-j'$ ]]; then    # GitHub syno_hdd_db issue #2
+    model=${model%??}               # remove last 2 chars
+fi
+
 # Get serial number
-serial=$(synogetkeyvalue /etc/synoinfo.conf pushservice_dsserial)
+serial=$(cat /proc/sys/kernel/syno_serial)
 
 # Get DSM full version
 productversion=$(/usr/syno/bin/synogetkeyvalue /etc.defaults/VERSION productversion)
