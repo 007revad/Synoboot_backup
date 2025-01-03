@@ -14,7 +14,7 @@
 bakpath=/volume1/backups/synoboot
 
 
-scriptver="v1.0.1"
+scriptver="v1.0.2"
 script=Synoboot_backup
 #repo="007revad/Synoboot_backup"
 #scriptname=synoboot_backup
@@ -88,6 +88,15 @@ if [[ $smallfixnumber -gt "0" ]]; then smallfix="-U$smallfixnumber"; fi
 echo -e "$model DSM $productversion-$buildnumber$smallfix $buildphase\n"
 
 echo -e "Backup path: ${bakpath}\n"
+
+
+# Check NAS has /dev/synoboot
+if [[ ! -e /dev/synoboot ]]; then
+    ding
+    echo -e "${Error}ERROR${Off} /dev/synoboot not found!"
+    echo -e "Unsupported Synology model: $model\n"
+    exit 1
+fi
 
 
 # Set backup image name

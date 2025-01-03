@@ -8,7 +8,9 @@
 
 ### Description
 
-Back up synoboot after each DSM update so you can recover from a corrupt USBDOM or EEPROM
+Back up synoboot after each DSM update so you can recover from a corrupt USBDOM
+
+For Synology models that have a USBDOM only.
 
 ### What does it do
 
