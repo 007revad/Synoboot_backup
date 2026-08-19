@@ -1,3 +1,7 @@
+v1.0.3
+- Changed file names from <model>_<serial>_<partition>_<DSM version>.img to <model>_<serial>_<DSM version>_<partition>.img so backups are first sorted by DSM version instead of synoboot, synoboot1, synoboot2.
+- Changed to more reliable method of getting the model name.
+
 v1.0.2
 - Now checks if /dev/synoboot exists.
 
